@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio Profesional | UPLA</title>
+  <meta name="description" content="Portafolio profesional de Franklin Yuver" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-glow"></div>
+  <div class="noise"></div>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <span class="logo-dot"></span>
+        Franklin Yuver
+      </a>
+
+      <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="tareas.html">Tareas</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="#contacto">Información</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#inicio">Inicio</a>
+      <a href="tareas.html">Tareas</a>
+      <a href="perfil.html">Perfil</a>
+      <a href="#contacto">Información</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-bg">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="grid"></span>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-text reveal">
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span>
+            Portafolio Universitario
+          </p>
+
+          <h1>
+            Hola, soy
+            <span class="gradient-text">Franklin Yuver</span>
+          </h1>
+
+          <div class="typing-wrap">
+            <span class="typing-prefix">Creo experiencias</span>
+            <span class="typing" id="typingText"></span>
+          </div>
+
+          <p class="hero-description">
+            Explora el progreso de mis proyectos y la implementación de mejores prácticas de desarrollo a través de este portafolio interactivo de avances.
+          </p>
+
+          <div class="hero-actions">
+            <a href="tareas.html" class="btn btn-primary">Ver Avances</a>
+            <a href="perfil.html" class="btn btn-secondary">Ver Perfil</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card glass">
+              <h3>+10</h3>
+              <p>Proyectos Completados</p>
+            </div>
+            <div class="stat-card glass">
+              <h3>100%</h3>
+              <p>Calidad Académica</p>
+            </div>
+            <div class="stat-card glass">
+              <h3>Elite</h3>
+              <p>Rendimiento Estudiantil</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="photo-frame parallax-card" id="parallaxCard">
+            <div class="photo-ring"></div>
+            <div class="photo-ring ring-2"></div>
+
+            <!-- Reemplaza "tu-foto.jpg" por tu imagen -->
+            <img src="img/foto-portada2.jpeg" alt="Foto de Franklin Yuver" class="profile-photo" />
+
+            <div class="floating-badge badge-1 glass">
+              <span>UI</span>
+            </div>
+            <div class="floating-badge badge-2 glass">
+              <span>Web</span>
+            </div>
+            <div class="floating-badge badge-3 glass">
+              <span>Creative</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre-mi" class="scroll-indicator" aria-label="Ir hacia abajo">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="section-tag">Sobre mí</p>
+          <h2>Una portada pensada para impresionar</h2>
+          <p>
+            Esta estructura está diseñada para que tu imagen, tu nombre y tu propuesta de valor
+            sean el centro de atención. Es ideal para un portafolio profesional, creativo o freelance.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card glass reveal">
+            <h3>Diseño Premium</h3>
+            <p>
+              Gradientes, fondos dinámicos, microinteracciones y una composición moderna
+              para dar una presencia visual fuerte.
+            </p>
+          </article>
+
+          <article class="about-card glass reveal">
+            <h3>Animaciones Suaves</h3>
+            <p>
+              Efectos de aparición, parallax, texto dinámico, cursor glow y transiciones fluidas
+              para una experiencia más profesional.
+            </p>
+          </article>
+
+          <article class="about-card glass reveal">
+            <h3>Base Escalable</h3>
+            <p>
+              Puedes usar esta portada como inicio de todo tu portafolio agregando después
+              proyectos, habilidades, servicios y contacto.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="proyectos">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="section-tag">Proyectos</p>
+          <h2>Zona lista para tus trabajos</h2>
+          <p>
+            Aquí puedes mostrar tus mejores proyectos con miniaturas, descripción y enlaces.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass reveal">
+            <div class="project-number">01</div>
+            <h3>Proyecto destacado</h3>
+            <p>Landing page moderna con identidad visual fuerte y conversión optimizada.</p>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-number">02</div>
+            <h3>Diseño UI/UX</h3>
+            <p>Interfaces limpias, elegantes y enfocadas en una navegación intuitiva.</p>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-number">03</div>
+            <h3>Marca personal</h3>
+            <p>Una presencia digital sólida que transmite profesionalismo y estilo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="contact-box glass reveal">
+          <p class="section-tag">Contacto</p>
+          <h2>Construyamos algo increíble</h2>
+          <p>
+            Personaliza esta sección con tu correo, WhatsApp, LinkedIn, GitHub o formulario.
+          </p>
+          <a href="mailto:tuemail@correo.com" class="btn btn-primary">Escríbeme</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
