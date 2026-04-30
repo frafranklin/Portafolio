@@ -899,3 +899,102 @@ img {
     font-size: 2.4rem;
   }
 }
+/* ============================= */
+/* PÁGINA CON UN SOLO PDF */
+/* ============================= */
+
+.pdf-single-page .hero-summary-grid {
+  display: none;
+}
+
+.pdf-single-page .pdf-view-section {
+  padding-top: 20px;
+}
+
+.pdf-single-page .single-pdf-card {
+  position: relative;
+  padding: 30px;
+  border-radius: 32px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 30px 90px rgba(0,0,0,0.35);
+  overflow: hidden;
+}
+
+.pdf-single-page .single-pdf-card::before {
+  content: "";
+  position: absolute;
+  inset: -120px;
+  background:
+    radial-gradient(circle at top left, rgba(124,92,255,0.24), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(0,212,255,0.18), transparent 34%);
+  pointer-events: none;
+}
+
+.pdf-single-page .single-pdf-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+
+.pdf-single-page .pdf-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  background: rgba(145,255,181,0.1);
+  border: 1px solid rgba(145,255,181,0.22);
+}
+
+.pdf-single-page .single-pdf-header h3 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.pdf-single-page .single-pdf-header p {
+  color: var(--muted);
+}
+
+.pdf-single-page .single-pdf-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pdf-single-page .single-doc-frame {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 760px;
+  border-radius: 26px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.16);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+}
+
+.pdf-single-page .single-doc-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 780px) {
+  .pdf-single-page .single-pdf-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pdf-single-page .single-doc-frame {
+    height: 620px;
+  }
+}
